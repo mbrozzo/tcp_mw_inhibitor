@@ -1,3 +1,7 @@
+# Reaper TCP mousewheel inhibitor
+
+Porting of [cfillion's implementation](https://github.com/cfillion/tcp_mw_inhibitor/tree/master) to Reaper 7.
+
 ## Build Setup
 
 Download these files into the `vendor` directory:

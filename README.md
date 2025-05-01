@@ -31,3 +31,6 @@ Download these files into the `vendor` directory:
 6. Run `tup` from this directory using "Developer Command Prompt for VS2015"
 7. Copy or symlink `x64\bin\reaper_tcp_mw_inhibitor64.dll` or `x86\bin\reaper_tcp_mw_inhibitor32.dll`
    to your REAPER plugin folder
+
+NOTE: after the first build, tup seems to have trouble deleting files in the .tup folder due to `vctip.exe`.
+In that case, please run `taskkill /F /IM vctip.exe` before building.

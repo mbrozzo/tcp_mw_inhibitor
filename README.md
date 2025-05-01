@@ -20,14 +20,14 @@ Download these files into the `vendor` directory:
 
 ### Windows
 
-1. Install [tup](http://gittup.org/tup/win32/tup-explicit-variant-v0.7.3-45-gcf6a829.zip)
+1. Install [tup v0.7.10](https://gittup.org/tup/win32/tup-explicit-variant-v0.7.10-52-g6b2c469e.zip)
   (explicit-variant branch, see [this
   thread](https://groups.google.com/d/topic/tup-users/UNUSE15PQdA/discussion))
-  and [Visual Studio 2017, with C++ support](https://www.visualstudio.com/vs/community/)
+  and [Visual Studio 2022, with C++ Desktop support](https://www.visualstudio.com/vs/community/)
 2. Prevent Microsoft's C++ compiler from saving telemetry outside of the build directory:
    [instructions here](https://msdn.microsoft.com/en-us/library/ee225238.aspx#Anchor_5)
    or set the `OptIn` registry key to `0` in
-   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VSCommon\14.0\SQM`
+   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VSCommon\17.0\SQM`
 6. Run `tup` from this directory using "Developer Command Prompt for VS2015"
 7. Copy or symlink `x64\bin\reaper_tcp_mw_inhibitor64.dll` or `x86\bin\reaper_tcp_mw_inhibitor32.dll`
    to your REAPER plugin folder

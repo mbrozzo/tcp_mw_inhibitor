@@ -2,6 +2,6 @@ WDL := vendor/WDL/WDL
 
 include @(TUP_PLATFORM).tup
 
-: foreach src/*.cpp | $(BUILDDEPS) |> !build |> build/%B.o
-: foreach $(WDLSOURCE) |> !build $(WDLFLAGS) |> build/wdl_%B.o
-: build/*.o | $(LINKDEPS) |> !link $(SOFLAGS) |> $(SOTARGET)
+: foreach src/*.cpp | $(BUILDDEPS) |> !build |> build/%B.o ^.*StartupProfileData-NonInteractive
+: foreach $(WDLSOURCE) |> !build $(WDLFLAGS) |> build/wdl_%B.o ^.*StartupProfileData-NonInteractive
+: build/*.o | $(LINKDEPS) |> !link $(SOFLAGS) |> $(SOTARGET) ^.*StartupProfileData-NonInteractive
